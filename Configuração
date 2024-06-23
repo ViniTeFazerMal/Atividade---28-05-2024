@@ -1,3 +1,5 @@
 nest new my-nest-project
 cd my-nest-project
 nest generate module products
+nest generate service products
+nest generate controller products
