@@ -1,0 +1,8 @@
+nest generate service products
+nest generate controller products
+
+export class Product {
+  id: number;
+  name: string;
+  price: number;
+}
