@@ -1,0 +1,9 @@
+import { NotFoundException, BadRequestException } from '@nestjs/common';
+
+@Get(':id')
+findOne(@Param('id', ParseIntPipe) id: number) {
+  if (isNaN(id)) {
+    throw new BadRequestException('Invalid ID');
+  }
+  return this.productsService.findOne(id);
+}
